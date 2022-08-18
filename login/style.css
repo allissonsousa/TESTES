@@ -22,7 +22,7 @@ body {
 header {
     background: pink linear-gradient(to right, rgb(238, 119, 83), lightsalmon);
     min-height: 120px;
-    max-height: 200px;
+    max-height: 220px;
 }
 main {
     font-family: var(--fonte02);
@@ -37,7 +37,7 @@ main {
     text-align: center;
 }
 div#login {
-    width: 500px;
+    width: 460px;
     height: 520px;
     background-color: rgba(0, 0, 0, 0.685);
     border-radius: 16px;
@@ -48,9 +48,9 @@ div#login {
 }
 .logo {
     padding: 30px;
-    margin-left: 7vw;
+    margin-left: 5vw;
     display: inline-block;
-    font-size:3.5em;
+    font-size:8vw;
     font-family: var(--fonte01);
 }
 .nada {
@@ -80,15 +80,16 @@ header > a {
     background-color: var(--color01);
     padding: 17px;
     border-radius: 12px;
-    font-size: 2em;
+    font-size: 3vw;
     font-family: sans-serif;
+    margin-left: 25%;
 }
 #user {
     border-radius: 7px;
     display: block;
     margin: auto;
     margin-bottom: 10px;
-    width: 470px;
+    width: 437px;
     height: 22px;
     font-size: 1em;
 }
@@ -97,7 +98,7 @@ header > a {
     display: block;
     margin: auto;
     margin-bottom: 10px;
-    width: 470px;
+    width: 437px;
     height: 22px;
 }
 #name {
@@ -105,7 +106,7 @@ header > a {
     display: block;
     margin: auto;
     margin-bottom: 10px;
-    width: 470px;
+    width: 437px;
     height: 22px;
     font-size: 1em;
 }
@@ -121,7 +122,7 @@ label {
     padding-left: 12px;
 }
 div#signin {
-    width: 500px;
+    width: 460px;
     height: 524px;
     background-color: rgba(0, 0, 0, 0.685);
     border-radius: 16px;
