@@ -13,11 +13,11 @@
 }
 body {
     background: yellow url(imagens/sky.webp) center center/cover no-repeat fixed;
-    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 15pt;
     height: 100vh;
+    width: 100vw;
 }
 header {
     background: pink linear-gradient(to right, rgb(238, 119, 83), lightsalmon);
