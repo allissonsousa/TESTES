@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap');
+:root {
+    --fonte01: 'Pacifico', sans-serif;
+    --fonte02: 'Baloo Tamma 2', sans-serif;
+    --color01: rgb(255, 145, 0);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: yellow url(imagens/sky.webp) center center/cover no-repeat fixed;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+    height: 100vh;
+}
+header {
+    background: pink linear-gradient(to right, rgb(238, 119, 83), lightsalmon);
+    min-height: 120px;
+    max-height: 200px;
+}
+main {
+    font-family: var(--fonte02);
+}
+.google {
+    background-color: rgb(255, 102, 0);
+    padding: 2px;
+    border-radius: 15px;
+    display: block;
+    margin: 40px 15px;
+    font-weight: normal;
+    text-align: center;
+}
+div#login {
+    width: 500px;
+    height: 520px;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 16px;
+    margin: auto;
+    margin-top: 100px;
+    color: white;
+    margin-top: 40px;
+}
+.logo {
+    padding: 30px;
+    margin-left: 7vw;
+    display: inline-block;
+    font-size:3.5em;
+    font-family: var(--fonte01);
+}
+.nada {
+    text-decoration: underline;
+    color: blue;
+    font-weight: normal;
+}
+#naotem {
+    text-align: center;
+    margin-top: 30px;
+}
+button {
+    background-color: orange;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    display: block;
+    border-color: orange;
+    border-radius: 15px;
+    color: white;
+    padding: 3px 15px 7px 15px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+header > a {
+    background-color: var(--color01);
+    padding: 17px;
+    border-radius: 12px;
+    font-size: 2em;
+    font-family: sans-serif;
+}
+#user {
+    border-radius: 7px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 470px;
+    height: 22px;
+    font-size: 1em;
+}
+#senha {
+    border-radius: 7px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 470px;
+    height: 22px;
+}
+#name {
+    border-radius: 7px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 470px;
+    height: 22px;
+    font-size: 1em;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+div > h1 {
+    padding: 30px 0px;
+    text-align: center;
+}
+label {
+    padding-left: 12px;
+}
+div#signin {
+    width: 500px;
+    height: 524px;
+    background-color: rgba(0, 0, 0, 0.685);
+    border-radius: 16px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: white;
+    
+}
+footer {
+    background-color: black;
+    color: white;
+    height: 70px;
+    text-align: center;
+}
+footer > p {
+    padding-top: 20px;
+    font-weight: normal;
+    font-size: 0.8em;
+}
