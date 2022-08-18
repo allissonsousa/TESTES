@@ -86,29 +86,29 @@ header > a {
     font-family: sans-serif;
     margin-left: 25%;
 }
-#user {
+.user {
     border-radius: 7px;
     display: block;
     margin: auto;
     margin-bottom: 10px;
-    width: 437px;
+    width: 94%;
     height: 22px;
     font-size: 1em;
 }
-#senha {
+.senha {
     border-radius: 7px;
     display: block;
     margin: auto;
     margin-bottom: 10px;
-    width: 437px;
+    width: 94%;
     height: 22px;
 }
-#name {
+.name {
     border-radius: 7px;
     display: block;
     margin: auto;
     margin-bottom: 10px;
-    width: 437px;
+    width: 94%;
     height: 22px;
     font-size: 1em;
 }
