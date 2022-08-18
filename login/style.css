@@ -21,9 +21,17 @@ body {
 }
 header {
     background: pink linear-gradient(to right, rgb(238, 119, 83), lightsalmon);
-    min-height: 120px;
+    min-height: 200px;
     max-height: 220px;
     width: 98.7vw;
+}
+header > a {
+    background-color: var(--color01);
+    padding: 17px;
+    border-radius: 12px;
+    font-size: 3vw;
+    font-family: sans-serif;
+    margin-left: 22%;
 }
 main {
     font-family: var(--fonte02);
@@ -38,19 +46,29 @@ main {
     text-align: center;
 }
 div#login {
-    min-width: 310px;
-    max-width: 460px;
+    width: 22pc;
     height: 520px;
-    background-color: rgba(0, 0, 0, 0.685);
+    background-color: rgba(0, 0, 0, 0.479);
     border-radius: 16px;
     margin: auto;
     margin-top: 100px;
     color: white;
     margin-top: 40px;
 }
+div#signin {
+    width: 22pc;
+    height: 524px;
+    background-color: rgba(0, 0, 0, 0.479);
+    border-radius: 16px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: white;
+    
+}
 .logo {
     padding: 30px;
-    margin-left: 5vw;
+    margin-left: 4vw;
     display: inline-block;
     font-size:8vw;
     font-family: var(--fonte01);
@@ -78,14 +96,7 @@ button {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-header > a {
-    background-color: var(--color01);
-    padding: 17px;
-    border-radius: 12px;
-    font-size: 3vw;
-    font-family: sans-serif;
-    margin-left: 25%;
-}
+
 .user {
     border-radius: 7px;
     display: block;
@@ -123,18 +134,7 @@ div > h1 {
 label {
     padding-left: 12px;
 }
-div#signin {
-    min-width: 310px;
-    max-width: 460px;
-    height: 524px;
-    background-color: rgba(0, 0, 0, 0.685);
-    border-radius: 16px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    color: white;
-    
-}
+
 footer {
     background-color: black;
     color: white;
