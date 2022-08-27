@@ -58,7 +58,7 @@ main {
 }
 
 div#login {
-    width: 22pc;
+    width: 340px;
     height: 520px;
     background-color: rgba(0, 0, 0, 0.479);
     border-radius: 16px;
@@ -69,7 +69,7 @@ div#login {
 }
 
 div#signin {
-    width: 22pc;
+    width: 340px;
     height: 524px;
     background-color: rgba(0, 0, 0, 0.479);
     border-radius: 16px;
