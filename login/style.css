@@ -27,21 +27,27 @@ header > a {
     background-color: var(--color01);
     padding: 17px;
     border-radius: 12px;
-    font-size: 3vw;
+    font-size: 1.2em;
     font-family: sans-serif;
-    margin-left: 22%;
+    position: absolute;
+    right: 30px;
+    top: 50px;
 }
 main {
     font-family: var(--fonte02);
 }
 .google {
     background-color: rgb(255, 102, 0);
-    padding: 2px;
+    padding: 4px;
     border-radius: 15px;
-    display: block;
-    margin: 40px 15px;
-    font-weight: normal;
+    font-weight: bold;
     text-align: center;
+    display: block;
+    margin: auto;
+    color: white;
+    width: 70%;
+    height: 40px;
+    border-color: rgb(255, 102, 0);
 }
 div#login {
     width: 22pc;
@@ -64,13 +70,21 @@ div#signin {
     color: white;
     
 }
+form input.cont {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 3px;
+    border-radius: 8px;
+}
 .logo {
     padding: 30px;
-    margin-left: 4vw;
+    margin-left: 30px;
     display: inline-block;
-    font-size:8vw;
+    font-size:2.5em;
     font-family: var(--fonte01);
-    margin-top: -10px;
+    
 }
 .nada {
     text-decoration: underline;
@@ -81,7 +95,7 @@ div#signin {
     text-align: center;
     margin-top: 30px;
 }
-button {
+.button {
     background-color: orange;
     margin-left: auto;
     margin-right: auto;

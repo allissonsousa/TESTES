@@ -17,24 +17,28 @@
     <main>
         <div id="login">
             <h1>SIGN IN</h1>
-            <label for="User">E-MAIL</label>
-            <input type="text" class="user">
-            <label for="passworld">Senha</label>
-            <input type="password" class="senha">
-            <button>SIGN IN</button>
-            <a href="#" class="google">LOGIN WITH GOOGLE</a>
+            <form action="#" autocomplete="on" method="get">
+                <label for="imail">E-MAIL</label>
+                <input type="email" name="mail" id="imail" class="cont" required>
+                <label for="isen">PASSWORD</label>
+                <input type="password" name="sen" id="isen" required class="cont">
+                <input type="submit" value="SIGN IN" class="button">
+            </form>
+            <input type="button" value="LOGIN WITH GOOGLE" class="google">
             <p id="naotem">Don't have an account? <a href="#" class="nada">Sign up</a></p>
         </div>
         <div id="signin">
             <h1>SIGN UP</h1>
-            <label for="Username">Username</label>
-            <input type="text" class="name">
-            <label for="User">E-MAIL</label>
-            <input type="text" class="user">
-            <label for="passworld">Senha</label>
-            <input type="password" class="senha">
-            <button>SIGN UP</button>
-            <a href="#" class="google">SIGN UP WITH GOOGLE</a>
+            <form action="#" method="get" autocomplete="on">
+                <label for="iuse">USERNAME</label>
+                <input type="text" name="use" id="iuse" autocomplete="username" required class="cont">
+                <label for="mai">E-MAIL</label>
+                <input type="email" name="ma" id="mai" class="cont" required>
+                <label for="ipas">PASSWORD</label>
+                <input type="password" name="pas" id="ipas" class="cont" required>
+                <input type="submit" value="SIGN UP" class="button">
+            </form>
+            <input type="button" value="LOGIN WITH GOOGLE" class="google">
         </div>
     </main>
     <footer>
