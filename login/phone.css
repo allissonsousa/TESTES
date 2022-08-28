@@ -15,7 +15,7 @@
 }
 html {
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
 }
 body {
     background:rgb(217, 255, 0) url(imagens/arvores.jpg) bottom center/cover no-repeat fixed;
@@ -23,7 +23,7 @@ body {
     font-weight: bold;
     font-size: 15pt;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     position: absolute;
 }
 
