@@ -40,7 +40,7 @@ header>a {
     display: none;
 }
 main {
-    background: rgb(217, 255, 0) url(imagens/arvores.jpg) center bottom/cover no-repeat fixed;
+    background: rgb(217, 255, 0) url(imagens/arvores.jpg) center bottom/content no-repeat fixed;
     font-family: var(--fonte02);
     padding-bottom: 30px;
     padding-top: 20px;
