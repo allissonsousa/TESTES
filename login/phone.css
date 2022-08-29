@@ -21,6 +21,7 @@ body {
     font-weight: bold;
     font-size: 15pt;
     width: 100vw;
+    box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -34,6 +35,7 @@ header {
     background: pink linear-gradient(to right, rgb(238, 119, 83), lightsalmon);
     height: 100px;
     width: 100vw;
+    box-sizing: border-box;
 }
 
 header>a {
