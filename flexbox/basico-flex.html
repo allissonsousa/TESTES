@@ -7,17 +7,23 @@
     <title>Teste flexbox</title>
     <style>
         .container {
-            max-width: 500px;
+            max-width: 900px;
+            height: 300px;
             margin: auto;
             border: 1px solid #000;
+            justify-content: center; /* EIXO PRINCIPAL */
+            align-items: flex-end; /* EIXO SECUNDÁRIO */
+            align-content: ; /* EIXO SECUNDÁRIO */
         }
+            
         .item {
             margin: 5px;
             padding: 5px;
-            background: #447;
+            background: rgb(55, 55, 202);
             text-align: center;
             font-size: 1em;
             color: #fff;
+            width: calc(33% - 20px);
         }
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -26,13 +32,31 @@
         .flex {
             display: flex;
         }
+        .vertical {
+            flex-direction: column;
+        }
+        .horizontal {
+            flex-direction: row;
+        }
+        .quebra {
+            flex-wrap: wrap;
+        }
+        .horizontal-c-quebra {
+            flex-flow: row wrap;
+        }
     </style>
 </head>
 <body>
-    <div class="flex container">
+    <div class="flex container horizontal quebra">
         <div class="item">campo flex 1</div>
         <div class="item">campo flex 2</div>
         <div class="item">campo flex 3</div>
+        <div class="item">campo flex 4</div>
+        <div class="item">campo flex 5</div>
+        <div class="item">campo flex 6</div>
+        <div class="item">campo flex 7</div>
+        <div class="item">campo flex 8</div>
+        <div class="item">campo flex 9</div>
     </div>
 </body>
 </html>
