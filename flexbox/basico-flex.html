@@ -13,7 +13,7 @@
             border: 1px solid #000;
             justify-content: center; /* EIXO PRINCIPAL */
             align-items: flex-end; /* EIXO SECUNDÁRIO */
-            align-content: ; /* EIXO SECUNDÁRIO */
+            align-content: space-between; /* EIXO SECUNDÁRIO */
         }
             
         .item {
@@ -23,7 +23,6 @@
             text-align: center;
             font-size: 1em;
             color: #fff;
-            width: calc(33% - 20px);
         }
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -44,19 +43,54 @@
         .horizontal-c-quebra {
             flex-flow: row wrap;
         }
+        .tam0 {
+            flex-grow: 0;
+        }
+        .tam1 {
+            flex-grow: 1;
+        }
+        .tam2 {
+            flex-grow: 2;
+        }
+        .tam3 {
+            flex-grow: 3;
+        }
+        .basea {
+            flex-basis: auto;
+        }
+        .base0 {
+            flex-basis: 0;
+        }
+        .base1 {
+            flex-basis: 1;
+        }
+        .base2 {
+            flex-basis: 2;
+        }
+        .base3 {
+            flex-basis: 3;
+        }
+        .ordem0 {
+            order: 0;
+        }
+        .ordem1 {
+            order: 1;
+        }
+        .ordem2 {
+            order: 2;
+        }
+        .ordem3 {
+            order: 3;
+        }
+        
     </style>
 </head>
 <body>
     <div class="flex container horizontal quebra">
-        <div class="item">campo flex 1</div>
-        <div class="item">campo flex 2</div>
-        <div class="item">campo flex 3</div>
-        <div class="item">campo flex 4</div>
-        <div class="item">campo flex 5</div>
-        <div class="item">campo flex 6</div>
-        <div class="item">campo flex 7</div>
-        <div class="item">campo flex 8</div>
-        <div class="item">campo flex 9</div>
+        <div class="item tam1 base0 ordem1">campo flex 1</div>
+        <div class="item tam1 base0 ordem2">campo flex 2</div>
+        <div class="item tam1 base0 ordem3">campo flex 3</div>
+        <div class="item tam1 base0 ordem0">campo flex 4</div>
     </div>
 </body>
 </html>
