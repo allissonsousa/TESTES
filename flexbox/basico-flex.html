@@ -11,9 +11,9 @@
             height: 300px;
             margin: auto;
             border: 1px solid #000;
-            justify-content: center; /* EIXO PRINCIPAL */
-            align-items: flex-end; /* EIXO SECUNDÁRIO */
-            align-content: space-between; /* EIXO SECUNDÁRIO */
+            justify-content: space-between; /* EIXO PRINCIPAL *//* EIXO SECUNDÁRIO */
+            align-items: center;
+            align-content: center; /* EIXO SECUNDÁRIO */
         }
             
         .item {
@@ -82,15 +82,31 @@
         .ordem3 {
             order: 3;
         }
-        
+        .reduzir0 {
+            flex-shrink: 0;
+        }
+        .reduzir1 {
+            flex-shrink: 1;
+        }
+        .reduzir2 {
+            flex-shrink: 2;
+        }
+        .reduzir3 {
+            flex-shrink: 3;
+        }
+        .flex0 {
+            flex: 1;
+        }
+        .inicio {
+            align-self: flex-start;
+        }
     </style>
 </head>
 <body>
-    <div class="flex container horizontal quebra">
-        <div class="item tam1 base0 ordem1">campo flex 1</div>
-        <div class="item tam1 base0 ordem2">campo flex 2</div>
-        <div class="item tam1 base0 ordem3">campo flex 3</div>
-        <div class="item tam1 base0 ordem0">campo flex 4</div>
+    <div class="flex container horizontal ">
+        <div class="item flex0">campo 1</div>
+        <div class="item flex0">campo flex 2</div>
+        <div class="item flex0 inicio">campo f 3</div>
     </div>
 </body>
 </html>

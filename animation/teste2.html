@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .botao {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 200px;
+            height: 80px;
+            overflow: hidden;
+            background-color: lightblue;
+            border-radius: 15px;
+        }
+        .botao::before {
+            content: '';
+            position: absolute;
+            background: linear-gradient(90deg, white, rgb(0, 195, 255),white);
+            height: 300px;
+            width: 50px;
+            animation: bota 4s linear infinite;
+        }
+        @keyframes bota {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .botao::after {
+            content: '';
+            background: lightblue;
+            position: absolute;
+            inset: 4px;
+            border-radius: 15px;
+        }
+        input {
+            position: relative;
+            z-index: 10;
+            color: darkblue;
+            border: 0px none transparent;
+            background-color: lightblue;
+            font-size: 2em;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+    </style>
+<body>
+    <div class="botao"> <input type="button" value="Aperte"></div>
+</body>
+</html>
