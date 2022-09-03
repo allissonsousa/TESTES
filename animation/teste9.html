@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+        body::after {
+            background: linear-gradient(90deg, rgb(0, 4, 255), rgb(136, 174, 255), rgb(250, 73, 103));
+            content: '';
+            height: 60vh;
+            width: 190%;
+            position:absolute;
+            z-index: -1;
+            top: 0px;
+            animation: fundo 20s ease infinite alternate;
+        }
+        body::before {
+            background: grey;
+            content: '';
+            height: 40vh;
+            width: 100vw;
+            position:absolute;
+            z-index: -1;
+            bottom: 0px;
+        }
+        @keyframes fundo {
+            0% {
+                transform: translateX(-20%);
+            }
+            100% {
+                transform: translateX(20%);
+            }
+        }
+        .transparente {
+            opacity: 0;
+        }
+        .baixo {
+            transform: translateY(60px);
+            animation: sobe 1.6s cubic-bezier(0.34, 1.56, 0.64, 1) 1 forwards;
+        }
+        @keyframes sobe {
+            to {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.6em;
+        }
+        button {
+            width: 100px;
+            height: 30px;
+            background-color: rgba(250, 128, 114, 0.514);
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p class="transparente baixo">Teste de Animações</p>
+    <h1 class="transparente baixo">Animações com CSS</h1>
+    <button class="transparente baixo">Bora!</button>
+</body>
+</html>
