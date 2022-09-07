@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            height: 100vh;
+            place-content: center;
+            background: linear-gradient(lightblue, transparent);
+        }
+        #caixa {
+            height: 150px;
+            width: 150px;
+            background: rgb(1, 133, 133);
+            display: grid;
+            place-content: center;
+            color: white;
+            font-weight: bolder;
+            font-size: 1.4em;
+            margin: 30px;
+            transform: none;
+            opacity: 1;
+
+        }
+        @keyframes aparece {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes some {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0;
+            }
+        }
+        .botao {
+            border-radius: 10px;
+            height: 40px;
+            width: 200px;
+            background-color: white;
+            margin: 10px;
+        }
+        #botao:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa">Me Esconda</div>
+    <button class="botao" onclick="esconder()">Esconder</button>
+    <button class="botao" onclick="mostrar()">Revelar</button>
+</body>
+<script>
+    function mostrar() {
+        caixa.style.display = 'grid'
+    }
+    function esconder() {
+        caixa.style.display = 'none' 
+    }
+</script>
+</html>
