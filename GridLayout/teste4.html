@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr 10px);
+            grid-template-rows:  1fr 3fr 1fr;
+            grid-row-gap: 10px;
+            grid-template-areas:
+            "cabeça cabeça cabeça cabeça cabeça cabeça cabeça"
+            "side-esq . main  main main . side-dir" 
+            "rodape rodape rodape rodape rodape rodape rodape ";
+        }
+
+        .caixa {
+            padding: 1em;
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px black;
+        }
+
+        .cx1 {
+            background: orangered;
+            grid-area: cabeça;
+        }
+
+        .cx2 {
+            background: rgb(255, 38, 0);
+            grid-area: side-esq;
+        }
+
+        .cx3 {
+            background: rgb(255, 56, 56);
+            grid-area: main;
+        }
+
+        .cx4 {
+            background: rgb(255, 255, 99);
+            grid-area: side-dir;
+        }
+        .cx5 {
+            background-color: yellow;
+            grid-area: rodape;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="caixa cx1">caixa1</div>
+            <div class="caixa cx2">caixa2</div>
+            <div class="caixa cx3">caixa3</div>
+            <div class="caixa cx4">caixa4</div>
+            <div class="caixa cx5">caixa5</div>
+        </div>
+    </main>
+</body>
+
+</html>

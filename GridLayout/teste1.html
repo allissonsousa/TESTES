@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns:repeat(3, 1fr);
+            grid-template-rows:  1fr 2fr 3fr 1fr 2fr 3fr;
+        }
+        .caixa {
+            padding: 1em;
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px  black;
+        }
+        .cx1 {
+            background: orangered;
+            grid-column: 1/2;
+            grid-row: 1/5;
+        }
+        .cx2 {
+            background: rgb(255, 38, 0);
+            grid-column: 2/4;
+        }
+        .cx3 {
+            background: rgb(255, 56, 56);
+            grid-column: 2/4;
+        }
+        .cx4 {
+            background: rgb(255, 255, 99);
+            grid-column: 2/span 2;
+        }
+        .cx5 {
+            background: rgb(255, 217, 0);
+        }
+        .cx6 {
+            background: orange;;
+        }
+        .cx7 {
+            background: rgb(255, 123, 0);
+            grid-column: 1/span 3;
+        }
+        .cx8 {
+            background: rgb(0, 128, 49);
+        }
+        .cx9 {
+            background: greenyellow;
+        }
+        .cx10 {
+            background: rgb(0, 124, 128);
+            grid-row: span 2;
+        }
+        .cx11 {
+            background: rgb(65, 84, 255);
+        }
+        .cx12 {
+            background: lightblue
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="caixa cx1">caixa1</div>
+            <div class="caixa cx2">caixa2</div>
+            <div class="caixa cx3">caixa3</div>
+            <div class="caixa cx4">caixa4</div>
+            <div class="caixa cx5">caixa5</div>
+            <div class="caixa cx6">caixa6</div>
+            <div class="caixa cx7">caixa7</div>
+            <div class="caixa cx8">caixa8</div>
+            <div class="caixa cx9">caixa9</div>
+            <div class="caixa cx10">caixa10</div>
+            <div class="caixa cx11">caixa11</div>
+            <div class="caixa cx12">caixa12</div>
+        </div>
+    </main>
+</body>
+</html>

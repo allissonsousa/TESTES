@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 70% auto;
+            grid-template-rows: 200px 800px 100px;
+            text-align: center;
+        }
+        header {
+            background-color: rgb(78, 117, 243);
+            grid-column: span 2;
+        }
+        main {
+            background-color: lightgray;
+        }
+        aside {
+            background-color: grey;
+        }
+        footer {
+            background-color: rgb(173, 230, 216);
+            grid-column: span 2;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <header>Cabeçalho</header>
+    <main>Principal</main><aside>Relacionado</aside>
+    <footer>Rodapé</footer>
+</body>
+
+</html>
