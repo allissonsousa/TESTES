@@ -1,22 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><!-- NÃO FINALIZADO -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background: linear-gradient(0deg,black, grey, white);
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        form {
+            height: 430px;
+            width: 400px;
+            background: rgb(38, 212, 169);
+            display: grid;
+            border-radius: 10px;
+            box-shadow: 1px 1px 3px black;
+        }
+        input, label {
+            display: block;
+            height: 30px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            margin: 8px;
+            border: none;
+        }
+        .resultado {
+            background-color: white;
+            height: 70px;
+            width: 320px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .resultado > p {
+            padding: 6px;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        #calc {
+            width: 110px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    </style>
 </head>
 <body >
-    <h1>Coloque um número diferente de 5</h1>
-    <input type="text" id="num" >
-    <input type="submit" value="Enviar" onclick="valor()">
+    <h1>Média de números</h1>
+    <form action="#">
+        <label for="num1">Digíte o primeiro Número</label>
+        <input type="number" name="num" id="num1">
+        <label for="num2">Digíte o segundo Número</label>
+        <input type="number" name="num" id="num2">
+        <label for="num3">Digíte o terçeiro Número</label>
+        <input type="number" name="num" id="num3">
+        <label for="num4">Digíte o quarto Número</label>
+        <input type="number" name="num" id="num4">
+        <input type="submit" id="calc" value="Calcular" onclick="calcular()">
+    </form>
+    <div class="resultado">
+        <p>A média destes números é : <br> <p id="result"></p></p>
+    </div>
     <script>
-        function valor(){
-            if (num == '5') {
-                window.alert('Seu valor não é Aceitável') 
-            } else {
-                window.alert('Seu valor foi Aceito')
-            }
+        var numero1 = (document.getElementById ("num1")).value
+        var numero2 = document.getElementById ("num2").value
+        var numero3 = document.getElementById ("num3").value
+        var numero4 = document.getElementById ("num4").value
+
+        var result = (numero1 + numero2 + numero3 + numero4)/ 4 
+        function calcular() {
+            window.alert (numero1)
         }
     </script>
 </body>
